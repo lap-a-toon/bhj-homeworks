@@ -25,6 +25,15 @@ class Game {
       При неправильном вводе символа - this.fail();
       DOM-элемент текущего символа находится в свойстве this.currentSymbol.
      */
+    document.addEventListener('keyup',(event)=>{
+      let symbol = this.currentSymbol.textContent.toLowerCase();
+      let input = event.key.toLowerCase();
+      if(symbol === input){
+        this.success();
+      }else{
+        this.fail();
+      }
+    })
   }
 
   success() {
