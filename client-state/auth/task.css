@@ -45,3 +45,8 @@
   display: block;
   text-align: center;
 }
+
+#unauth{
+  display: block;
+  margin: 30px auto 10px;
+}
